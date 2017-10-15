@@ -46,7 +46,7 @@ text-align: center;
 }
 
 #entry-title{
-	margin-top: 25%;
+	margin-top: 20%;
 }
 
 #entry-title p{
@@ -56,6 +56,58 @@ font-size: 20px;
 
 .frijole{
 	font-family: 'Frijole', serif;
+}
+
+.navbar{
+	background-color: transparent;
+	border:none;
+	
+}
+
+.navbar-right{
+	padding: 10px;
+	font-size: 3em;
+	color: #f4d1b2;
+}
+
+.menu{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: rgb(159,149,124);
+	width: 250px;
+	height: 100%;
+	border-left: 3px #263026 solid;
+}
+
+.menu ul{
+	list-style: none;
+	padding: 25px;
+}
+
+.menu li a{
+	color: white;
+	font-size: 25px;
+	line-height: 100px;
+
+}
+.menu li a:hover{
+text-decoration: none;
+color: #8fbc8f;
+
+}
+
+
+.glyphicon-remove{
+	text-align: right;
+	font-size: 25px;
+}
+
+.links{
+	width: 30%;
+}
+.links img{
+	width: 50%;
 }
 
 /*---------------------------------------------------------------------------*/
