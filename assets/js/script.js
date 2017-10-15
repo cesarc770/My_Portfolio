@@ -1,10 +1,10 @@
 
 $(document).ready(function(){
 
-
 //When loading the page it will show a splash loading page
 $("nav").hide();
 $(".main-background").hide();
+$('main').hide();
 	
 $('.loading-page').fadeIn(1000);
 
@@ -13,6 +13,7 @@ $(".loading-page").fadeOut(2000);
 $(".main-background").show();
 $("body").addClass("main-background");
 $("nav").show();
+$('main').fadeIn(3000);
 
 },2000);
 
@@ -20,7 +21,7 @@ $("nav").show();
 $("#enter-btn").on("click", function(){
 $("main-background").fadeOut(800);
 
-})
+});
 
 //div for mmain menu with links to other pages and links to github and linkedIn
 var menu = $("<div>");
@@ -46,9 +47,28 @@ $("#menu-btn").on("click", function(){
 
 $("#close").on("click", function(){
 	$(".menu").hide();
-})
+});
 
+//-----------------------------------------------------------------------------------------
 
+//function on mouseover the portfolio items 
+var flipped = false;
+$("#hangman-btn").on("click", function(){
+	if(flipped === false){
+		$("#hangman").addClass("animated flipInY");
+		$("#hangman").removeClass("flip");
+		$("#hangman").html("<div class='container-fluid text-justify'><h2>Hangman</h2><p>This Website was created to showcase my JavaScript and jQuery skills.</p>"+
+			" <p>JavaScript handles the logic of the game as well as some of the animation of the page. CSS elements are incorporated to give the page the selected team themes.</p>"+
+			"<p>The game is simple, but fun, a word is generated randomly and it takes inputs from your keyboard or the buttons. Give it a try and see how many words you can get right!</p></div>");
+		flipped = true;
+	}else{
+		$("#hangman").addClass("flip");
+		$("#hangman").removeClass("flipInY");
+		$("#hangman").html("<img src=\"assets/images/hangman.png\" class=\"img-responsive\">")
+		flipped = false;
+	}
+
+});
 
 
 
