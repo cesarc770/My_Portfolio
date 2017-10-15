@@ -1,0 +1,61 @@
+body{
+}
+
+h1{
+	font-family: serif, cursive;
+	font-size:60px;
+}
+
+.main-background{
+	background: url("../images/background.jpeg") no-repeat center center fixed;
+	background-size: cover;
+	color: white;
+}
+
+.loading-page{
+	background: url("../images/loading.jpg") no-repeat center center fixed;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	bottom:0;
+	left:0;
+	right: 0;
+}
+
+.loading-gif{
+	width: 20%;
+	margin-left: 40%;
+	margin-top: 15%;
+}
+
+/*The following styles apply fo the entry page to the Wesite*/
+#enter-btn{
+background-color: transparent;
+border: 3px white solid;
+color: white;
+font-size: 20px;
+font-weight: bold;
+padding: 10px;
+text-align: center;
+
+}
+
+#enter-btn:hover{
+	padding: 30px;
+	font-size: 30px;
+}
+
+#entry-title{
+	margin-top: 25%;
+}
+
+#entry-title p{
+font-family: cursive;
+font-size: 20px;
+}
+
+.frijole{
+	font-family: 'Frijole', serif;
+}
+
+/*---------------------------------------------------------------------------*/
