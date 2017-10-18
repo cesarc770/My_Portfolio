@@ -167,10 +167,32 @@ color: #8fbc8f;
 	font-size: 20px;
 }
 
+/*Styling Skills page*/
+.col-sm-3 img{
+	width: 100%;
+	margin:0;
+}
+
+.col-sm-3{
+	width: 20%;
+	margin: 2%;
+}
+
+.center{
+	margin-left: 10%;
+	width: 80%;
+}
 
 /*media queries*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 940px) {
+	.my-pic{
+	margin-left: 10%;
+}
+	
+}
+
+@media screen and (max-width: 767px) {
 .panel-body{
 	font-size: 10px;
 	height: 250px;
@@ -197,5 +219,28 @@ color: #8fbc8f;
 	border-left: none;
 	margin-top: 10px;
 
+}
+
+	.my-pic{
+	margin-left: 28%;
+}
+.col-sm-3{
+	float: left;
+}
+.navbar-header{
+	float: left;
+}
+.navbar-right{
+	float: right;
+}
+}
+
+@media screen and (max-width: 640px) {
+	.my-pic{
+	margin-left: 10%;
+	width: 80%;
+}
+.col-sm-3{
+	width: 100%;
 }
 }
