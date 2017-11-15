@@ -189,12 +189,25 @@ color: #8fbc8f;
 	.my-pic{
 	margin-left: 10%;
 }
-	
+.panel-body{
+	font-size: 8px;
+	height: 250px;
+}
+
+.panel-body img {
+
+    height: 250px;
+
+}
+	.panel-footer {
+    font-size: 90%;
+
+}
 }
 
 @media screen and (max-width: 767px) {
 .panel-body{
-	font-size: 10px;
+	font-size: 12px;
 	height: 250px;
 }
 .panel-body h2{
@@ -243,4 +256,17 @@ color: #8fbc8f;
 .col-sm-3{
 	width: 100%;
 }
+}
+
+@media screen and (min-width: 941px) {
+	.panel-body{
+	font-size: 75%;
+
+}
+	.panel-footer {
+    font-size: 90%;
+
+}
+
+
 }

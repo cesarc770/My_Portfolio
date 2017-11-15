@@ -51,7 +51,7 @@ $("#close").on("click", function(){
 
 //-----------------------------------------------------------------------------------------
 
-//function on mouseover the portfolio items 
+//function portfolio items 
 var flippedHang = false;
 var flippedRPG = false;
 $("#hangman-btn").on("click", function(){
@@ -60,7 +60,7 @@ $("#hangman-btn").on("click", function(){
 		$("#hangman").removeClass("flip");
 		$("#hangman").html("<div class='container-fluid text-justify'><h2>El \"Futbol\" Hangman</h2><p>This Website was created to showcase my JavaScript and jQuery skills.</p>"+
 		"<p>It's a fun game; a word is generated randomly and it takes inputs from your keyboard or the buttons. Give it a try and see how many words you can get right!</p>"+
-		"<p> Click <a href='https://github.com/cesarc770/Hangman-Game' target='_blank'>here</a> to see the code in GitHub</p> or "+
+		"<p> Click <a href='https://github.com/cesarc770/Hangman-Game' target='_blank'>here</a> to see the code in GitHub or "+
 		"<a href='http://www.cesaracaceres.com/Hangman-Game/' target='_blank'>Go to Site</a></div>");
 		flippedHang = true;
 	}else{
@@ -78,7 +78,7 @@ $("#rpg-btn").on("click", function(){
 		$("#rpg").removeClass("flip");
 		$("#rpg").html("<div class='container-fluid text-justify'><h2>Pokemon RPG</h2><p>This Website was created to showcase my JavaScript and jQuery skills.</p>"+
 		"<p>Pick your Pokemon, pick one to battle and beat them all. The base attack of the pokemon you choose increases by its own power's base each time you attack while your opponent's attack stays the same.</p>"+
-		"<p> Click <a href='https://github.com/cesarc770/RPG-Game' target='_blank'>here</a> to see the code in GitHub</p> or "+
+		"<p> Click <a href='https://github.com/cesarc770/RPG-Game' target='_blank'>here</a> to see the code in GitHub or "+
 		"<a href='http://www.cesaracaceres.com/RPG-Game/' target='_blank'>Go to Site</a></div>");
 		flippedRPG = true;
 	}else{
@@ -86,6 +86,25 @@ $("#rpg-btn").on("click", function(){
 		$("#rpg").removeClass("flipInY");
 		$("#rpg").html("<img src=\"assets/images/rpg.png\" class=\"img-responsive\">")
 		flippedRPG = false;
+	}
+
+});
+
+$("#pets-btn").on("click", function(){
+	if(flippedHang === false){
+		$("#pets").addClass("animated flipInY");
+		$("#pets").removeClass("flip");
+		$("#pets").html("<div class='container-fluid text-justify'><h2>FOREVER PETS</h2><p>This website was created to help people find a pet that fits them and learn good ways to take care of their particular pet.</p>"+
+		"<p>We use JavaScript functions to calculate the best options of dog breeds for you based on the information you provide</p>"+
+		"<p>It pulls data from Pet adoption APIs as well as the YouTube API. The applicaiton uses Firebase to store information. </p>"+
+		"<p> Click <a href='https://github.com/cesarc770/Pet-Project/' target='_blank'>here</a> to see the code in GitHub or "+
+		"<a href='http://www.cesaracaceres.com/Pet-Project/' target='_blank'>Go to Site</a></div>");
+		flippedHang = true;
+	}else{
+		$("#pets").addClass("flip");
+		$("#pets").removeClass("flipInY");
+		$("#pets").html("<img src=\"assets/images/pets.png\" class=\"img-responsive\">")
+		flippedHang = false;
 	}
 
 });
