@@ -109,6 +109,25 @@ $("#pets-btn").on("click", function(){
 
 });
 
+$("#chat-btn").on("click", function(){
+	if(flippedHang === false){
+		$("#chat").addClass("animated flipInY");
+		$("#chat").removeClass("flip");
+		$("#chat").html("<div class='container-fluid text-justify'><h2>Chat Room App</h2><p>This web application allows you to create chat rooms and communicate with other people in real time.</p>"+
+		"<p>Most applications today have some sort of chat component and is important to know how to incorporate those into the apps.</p>"+
+		"<p>For this web appication I used node.js as well as express and socket.io to create the chat itself and handle the messages. Through routing I redirect the app to the chat rooms and I used firebase for authetication and session management. </p>"+
+		"<p> Click <a href='https://github.com/cesarc770/Chat-App' target='_blank'>here</a> to see the code in GitHub or "+
+		"<a href='https://chatty-chatty-chat-app.herokuapp.com/' target='_blank'>Go to Site</a></div>");
+		flippedHang = true;
+	}else{
+		$("#chat").addClass("flip");
+		$("#chat").removeClass("flipInY");
+		$("#chat").html("<img src=\"assets/images/chat.png\" class=\"img-responsive\">")
+		flippedHang = false;
+	}
+
+});
+
 
 		
 
